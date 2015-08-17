@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/roboto.min.css" rel="stylesheet">
+    <link href="/css/material.min.css" rel="stylesheet">
+    <link href="/css/ripples.min.css" rel="stylesheet">
+    <link href='/css/style.css' rel='stylesheet'/>
+  </head>
+  <body>
+
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+        
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    
+  </div>
+</div>
+
+  	<div class="logo">
+  		<i class="mdi-content-add-circle"></i>
+  		<h1 class="brand"><%= title %><span>&copy</span></h1>
+  	</div>
+    <div class="container">
+	    <div class="row">
+	    	<div class="col-md-6 col-centered">
+				  <form action="search">
+              <div class="form-group has-error">
+                <input type="search" class="form-control form-control-success lg-text" placeholder="Búsqueda médica de manera fácil y completa" name="q" required>
+                <button class="btn btn-danger btn-raised">
+                  <i class="mdi-action-search"></i>
+                </button>
+              </div>    
+          </form>
+	    	</div>
+	    </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ripples.min.js"></script>
+	<script src="js/material.min.js"></script>
+	<script>
+	    $(document).ready(function(){$.material.init();});
+	</script>
+  </body>
+</html>
